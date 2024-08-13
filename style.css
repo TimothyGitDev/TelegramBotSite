@@ -2,43 +2,43 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #eee;
+}
+
+.clicker-menu {
+    display: flex;
+}
+
+#btn {
+    height: 140px;
+    width: 150px;
+    background-color: rgb(51, 53, 93);
+    border: 6px solid rgb(102, 102, 202);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: rgb(32, 33, 49);
+}
+
+.cliker-header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #fed;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-.container {
+/* CARDS */
+
+.card {
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.input-box {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    flex-direction: column;
-    display: flex;
-    box-shadow: -1px 9px 8px 0px rgba(34, 60, 80, 0.2);
-    z-index: 0;
-}
-
-.input-box input {
-    height: 50px;
-    border-radius: 8px;
-    border: 2px solid #eee;
-    outline: none;
-    z-index: -1;
-}
-
-.input-box label {
-    font-size: 10px;
-    position: absolute;
-    margin-top: -5px;
-    margin-left: 10px;
-    background-color: #fff;
-    z-index: 10;
 }
