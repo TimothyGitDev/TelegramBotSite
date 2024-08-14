@@ -5,8 +5,30 @@ body {
     background-color: #eee;
 }
 
-.clicker-menu {
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+.header-content {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.header-content a {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.header-content img{
+   width: 80px;
+   border-radius: 15px;
 }
 
 #btn {
@@ -25,20 +47,5 @@ body {
     background-color: rgb(32, 33, 49);
 }
 
-.cliker-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0;
-}
 
-/* CARDS */
 
-.card {
-
-    display: flex;
-}
