@@ -99,21 +99,8 @@ main .container {
     border-radius: 10px;
 }
 
-/* FOOTER */
 
-footer{
-    background-color: #1c1d3a;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-    display: flex;
-}
 
-.container footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 
