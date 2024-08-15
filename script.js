@@ -13,20 +13,20 @@ price.textContent = upgradeCost;
 btn.addEventListener('click', () => {
     counter += clickMoney;
     money.textContent = counter + '$'; 
+    
     updateUpgradeButton();
 }); 
 
 updateUpgradeButton();
-updateUpgradeButton();
 
-Upgradebtn.addEventListener('click', () => {
+Upgradebtn.addEventListener('click', function UpgradeMoney() {
 
     if(counter >= upgradeCost) {
         counter = Math.floor(counter - upgradeCost);
 
         clickMoney *= 2;
         upgradeCost *= 3;
-        textContent = 'Купить улучшение ';
+        Upgradebtn.textContent = 'Купить улучшение ';
         price.textContent = upgradeCost + '$'; 
         money.textContent = counter + '$';   
         updateUpgradeButton();
@@ -42,6 +42,10 @@ function updateUpgradeButton() { // Проверка хватает ли ден�
         Upgradebtn.disabled = false; // Активируем кнопку
     }
 }
+
+
+
+
 
 
 
