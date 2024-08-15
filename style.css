@@ -6,10 +6,16 @@ body {
     color: #fff;
 }
 
+html, body {
+    touch-action: none;
+}
+
 .container {
     max-width: 1250px;
     margin: 0 auto;
 }
+
+
 
 
 /* HEADER */
@@ -37,7 +43,7 @@ body {
    margin-right: 15px;
 }
 
-#btn {
+.btn {
     height: 240px;
     width: 250px;
     background-color: rgb(51, 53, 93);
@@ -49,7 +55,7 @@ body {
     cursor: pointer;
 }
 
-#btn:hover {
+.btn:hover {
     background-color: rgb(32, 33, 49);
 }
 
@@ -90,7 +96,7 @@ main .container {
     margin-bottom: 5px;
 }
 
-#UpgradeMoney {
+.UpgradeMoney {
     height: 35px;
     background-color: rgb(185, 126, 16);
     border: 0;
@@ -98,13 +104,8 @@ main .container {
     border-radius: 10px;
 }
 
-#UpgradeMoney2 {
-    height: 35px;
-    background-color: rgb(185, 126, 16);
-    border: 0;
-    color: #fff;
-    border-radius: 10px;
-}
+
+
 
 
 
