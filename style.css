@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #22256a;
     color: #fff;
+    overflow-y: scroll;
 }
 
 html, body {
@@ -103,6 +104,9 @@ main .container {
     color: #fff;
     border-radius: 10px;
 }
+
+
+
 
 
 
