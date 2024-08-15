@@ -7,17 +7,11 @@ body {
     overflow-y: scroll;
 }
 
-html, body {
-    touch-action: none;
-}
 
 .container {
     max-width: 1250px;
     margin: 0 auto;
 }
-
-
-
 
 /* HEADER */
 
@@ -104,6 +98,8 @@ main .container {
     color: #fff;
     border-radius: 10px;
 }
+
+
 
 
 
