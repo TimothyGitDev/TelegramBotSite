@@ -3,6 +3,7 @@ let btn = document.querySelector('.btn');
 
 let Upgradebtn = document.querySelector('.UpgradeMoney');
 let price = document.querySelector('.price');
+let CounterMoney = document.getElementById('ClickMoney');
 
 let clickMoney = 1;
 let counter = 0;
@@ -28,20 +29,36 @@ Upgradebtn.addEventListener('click', function UpgradeMoney() {
         textContent = 'Купить улучшение ';
         price.textContent = upgradeCost + '$'; 
         money.textContent = counter + '$';   
+
+        CounterMoney.textContent = 'Доход за клик: ' + clickMoney + '$';
         updateUpgradeButton();
     }
 });
 
-function updateUpgradeButton() { // Проверка хватает ли деняг
+function updateUpgradeButton() { 
     if (counter < upgradeCost) {
-        Upgradebtn.style.backgroundColor = '#0d0e44'; // Недостаточно денег
-        Upgradebtn.disabled = true; // Делаем кнопку неактивной
+        Upgradebtn.style.backgroundColor = '#0d0e44'; 
+        Upgradebtn.disabled = true; 
     } else {
-        Upgradebtn.style.backgroundColor = ''; // Оставляем стандартный цвет кнопки
-        Upgradebtn.disabled = false; // Активируем кнопку
+        Upgradebtn.style.backgroundColor = ''; 
+        Upgradebtn.disabled = false; 
     }
 }
 
+// Animations
+
+function AnimBtn() {
+    money.classList.toggle('anim');
+    btn.classList.toggle('animBtn');
+
+    setTimeout(() => {
+        btn.classList.remove("animBtn"); 
+    }, 300); 
+
+    setTimeout(() => {
+        money.classList.remove("anim"); 
+    }, 300); 
+}
 
 
 
